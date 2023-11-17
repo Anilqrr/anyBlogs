@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Anilqrr/anyBlogs/static/css/main.f65bd8f7.css",
+    "main.js": "/Anilqrr/anyBlogs/static/js/main.67dfe0c9.js",
+    "static/media/myimge.jpg": "/Anilqrr/anyBlogs/static/media/myimge.2e0e9d521b3e6e7f3842.jpg",
+    "index.html": "/Anilqrr/anyBlogs/index.html",
+    "main.f65bd8f7.css.map": "/Anilqrr/anyBlogs/static/css/main.f65bd8f7.css.map",
+    "main.67dfe0c9.js.map": "/Anilqrr/anyBlogs/static/js/main.67dfe0c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f65bd8f7.css",
+    "static/js/main.67dfe0c9.js"
+  ]
+}
