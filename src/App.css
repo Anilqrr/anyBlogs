@@ -1,38 +1,435 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+    /* width: 100vw; */
+}
+nav .logo img{
+    padding-top: 1px;
+    height: 35px;
+    width: 40px;
+    border-radius: 100px;
+}
+nav ul{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+nav ul li{
+    padding: 10px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav .profile a{
+    text-decoration: none;
+}
+nav .profile a img{
+    padding-top: 1px;
+    height: 35px;
+    width: 40px;
+    border-radius: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* searchBar */
+.search-bar{
+    display: flex;
+    justify-content: center;
+}
+.search-bar input{
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 5px;
+    width: 500px;
+}
+.search-bar button{
+    border-radius: 10px;
+    width: 60px;
+    background-color:aliceblue;
+    border: 1px solid rgb(54, 43, 43);
+    margin-top: 5px;
+    margin-left: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* blogs */
+.container{
+     /* display: flex; */
+    /* justify-content: ; */
+    /* align-items: center;  */
+    margin-top: 20px;
+   
+}
+.container h1{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container .blogs{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.container .blogs .box{
+    border-radius: 10px;
+    height: 350px;
+    width: 300px;
+    background-color: azure;
+
+}
+.container .blogs .box .b-img img{
+    border-radius: 10px;
+    height: 150px;
+    width: 300px;
+}
+.container .blogs .box .b-title h3{
+    margin: 5px;
+}
+.container .blogs .box .b-desc p{
+    margin:10px 5px;
+}
+.container .blogs .box .b-auth{
+    margin:5px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.container .blogs .box .b-auth img{
+    border-radius: 100px;
+    height: 35px;
+    width: 30px;
+}
+.container .blogs .box .b-auth p{
+    padding-left: 5px;
+}
+.container .blogs .box .b-auth h4{
+    padding-left: 45px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Readmore */
+.readmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.readmore .box img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* userblogs */
+
+.loginuser{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.loginuser a button{
+    height: 30px;
+    width: 200px;
+    background-color: rgb(233, 243, 88);
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.container .addblog{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.container .addblog a button{
+    height: 25px;
+    width: 100px;
+    background-color: rgb(88, 124, 243);
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.container .blogs .box .action{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .blogs .box .action .btn{
+    width: 70px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.container .blogs .box .action #btn-u{
+      background-color: rgb(50, 221, 50);
+      color: rgba(0, 0, 0, 0.678);
+}
+.container .blogs .box .action #btn-d{
+    background-color: rgb(245, 108, 108);
+    color: rgba(0, 0, 0, 0.678);
+}
+
+/* Blog Add form and Update*/
+.info h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+.useraddblog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    height: 215px;
+}
+.useraddblog form{
+    background-color: rgb(105, 190, 240);
+    height: 190px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.useraddblog form .form-control{
+    margin-top: 10px;
+    padding: 5px;
+}
+.useraddblog form .form-control .text{
+    width: 300px;
+    height: 18px;
+    border-radius: 10px;
+    border: 1px;
+    padding: 2px;
+}
+
+.useraddblog form .form-control-btn{
+    margin-top: 20px;
+    text-align: center;
+    padding: 5px;
+}
+.useraddblog form .form-control-btn button{
+    height: 25px;
+    width: 120px;
+    background-color: rgb(88, 124, 243);
+    border-radius: 10px;
+    border: 1px;
+    cursor: pointer;
+}
+
+/* update */
+.useraddblog .form{
+    background-color: rgb(23, 133, 23);
+    height: 190px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.useraddblog form .form-control-btn-u{
+    margin-top: 20px;
+    text-align: center;
+    padding: 5px;
+}
+.useraddblog form .form-control-btn-u button{
+    height: 25px;
+    width: 120px;
+    background-color: rgb(91, 231, 121);
+    border-radius: 10px;
+    border: 1px;
+    cursor: pointer;
+}
+
+/* About */
+.about{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin:30px;
+    height: 239px;
+}
+
+/* Contact */
+.info h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin:10px;
+    /* margin-bottom: ; */
+    height: 230px;
+}
+.contact form{
+    background-color: rgb(245, 162, 37);
+    height: 205px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact form .form-control{
+    margin-top: 10px;
+    padding: 5px;
+}
+.contact form .form-control .text,textarea{
+    width: 300px;
+    height: 18px;
+    border-radius: 10px;
+    border: 1px;
+    padding: 2px;
+}
+.contact form .form-control textarea{
+    height: 100px;
+}
+
+.contact form .form-control-btn{
+    margin-top: 7px;
+    text-align: center;
+    padding: 5px;
+}
+.contact form .form-control-btn button{
+    height: 25px;
+    width: 120px;
+    background-color: rgb(243, 207, 88);
+    border-radius: 10px;
+    border: 1px;
+    cursor: pointer;
+}
+
+/* Signup */
+.signup{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin:10px;
+    /* margin-bottom: ; */
+    height: 230px;
+}
+.signup form{
+    background-color: rgb(235, 194, 11);
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    /* margin-bottom: 20px; */
+}
+.signup form .form-control{
+    margin-top: 10px;
+    padding: 5px;
+}
+.signup form .form-control .text{
+    width: 300px;
+    height: 18px;
+    border-radius: 10px;
+    border: 1px;
+    padding: 2px;
+}
+.signup form .form-control .gender{
+    width: 30px;
+    margin: 0px 0px;
+    height: 18px;
+    border-radius: 10px;
+    border: 1px;
+    padding: 2px;
+}
+
+.signup form .form-control-btn{
+    margin-top: 7px;
+    text-align: center;
+    padding: 5px;
+}
+.signup form .form-control-btn button{
+    height: 25px;
+    width: 120px;
+    background-color: rgb(243, 207, 88);
+    border-radius: 10px;
+    border: 1px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* login */
+.login{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin:10px;
+    /* margin-bottom: ; */
+    height: 230px;
+}
+.login form{
+    background-color: rgb(235, 194, 11);
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.login form .form-control{
+    margin-top: 10px;
+    padding: 5px;
+}
+.login form .form-control .text{
+    width: 300px;
+    height: 18px;
+    border-radius: 10px;
+    border: 1px;
+    padding: 2px;
+}
+.login form .form-control .gender{
+    width: 30px;
+    margin: 0px 0px;
+    height: 18px;
+    border-radius: 10px;
+    border: 1px;
+    padding: 2px;
+}
+.login form .form-control-btn{
+    margin-top: 7px;
+    text-align: center;
+    padding: 5px;
+}
+.login form .form-control-btn button{
+    height: 25px;
+    width: 120px;
+    background-color: rgb(241, 206, 89);
+    border-radius: 10px;
+    border: 1px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.login form .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer */
+.footer{
+    margin-top: 50px;
+}
+.footer p{
+    background-color: rgb(194, 105, 4);
+    padding: 10px;
+    text-align: center;
+}
+
+/* alert */
+.alert{
+    /* background-color: rgb(111, 243, 129); */
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 750px;
+    margin:10px auto;
+    /* transition-timing-function: ease-in-out; */
 }
